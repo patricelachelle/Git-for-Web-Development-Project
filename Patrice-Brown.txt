@@ -1,0 +1,93 @@
+    1. What is Semantic HTML?
+       Semantic elements are elements with meaning which clearly defines it content.
+    2. What is HTML used for?
+       HTML is the standard markup language used to create web pages.
+    3. What is an attribute and where do we put it?
+       HTML attributes provide additional information about elements. Attributes are always specified in the start tag.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+       H1 is used to define the most important heading and should only be used once per page.
+    5. Name two tags that have required attributes.
+       The <image> and <a> tags have required attributs. 
+    6. What do we put in the head of our HTML document?
+       The head can contain the title, meta data, and links to specified sources.
+    7. What is an id?
+       The id is a global attribute and it specifies a unique identity for an HTML element and also dictates the styling of that element.
+    8. What elements can I add an id to?
+       You can add id to HTML elements.
+    9. How many times can I use the same id on a page?
+       You can not have more than one element with the same id.
+    10. What is a class?
+        Class is used to specify a class for an HTML element.
+    11. What elements can I add a class to?
+        You can add the class attribute to HTML elemnts such as <div>.
+    12. How many times can I use the same class on a page?
+        Multiple HTML elements can share the same class
+    13. How do I get my link to open in a new tab?
+        By setting the target attribute to "_blank", the link will open in a new browser window or a new tab.
+    14. What is the alt attribute in the image tag used for?
+        The alt attribute gives specified text to an image if that image can't be displayed.
+    15. How do I reference an id?
+        The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}
+    16. What is the difference between a section and a div?
+        The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. The <div> tag defines a division or a         section in an HTML document. The <div> tag is used to group block-elements to format them with CSS.
+    17. What is CSS used for?
+        CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.
+    18. How do we select an element? Example - every h2 on the page.
+        In CSS, selectors are patterns used to select the element(s) you want to style. So to select h2 you would you enter h2 then define CSS properties within curly                 braces{}.
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one.
+        The difference between an ID and a class is that an ID is only used to identify one single element and class can be used to identify more than one HTML element. For         instance you will have only one h1 tag and <h1 id> can be used to give style properties to the element. However if there is more than one h2 elements <h2 class> will         be used to give style properties to the element.
+    20. How do we select classes in CSS?
+        To select elements with a specific class, write a period (.) character, followed by the name of the class. 
+    21. How do we select a p element with a single class of “human””? p.human
+    22. What is a parent child selector? When would this be useful?
+        The parent child selector selects all elements that are a direct child of the specified element. When making lists on your page a parent child selector would be useful         to give certain properties to that list.
+    23. How do you select all links within a div with the class of sidebar?
+        div.sidebar
+    24. What is a pseudo selector?
+        A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the         mouse pointer.     
+    25. What do we use to change the spacing between lines?
+        line-height
+    26. What do we use to change the spacing between letters?
+        letter-spacing
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        text-transform
+    28. How do I add a 1px border around my div that is dotted and black?
+        .div{border: 1px dotted black;}
+    29. How do I select everything on the page?
+        *
+    30. How do I write a comment in CSS?
+        Start a comment with /* , and end it with */.
+    31. How do I find out what file I am in, when I am using the command line?
+        PWD
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls -al
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+        rm You have to be careful because there is no confirm removal prompt and once it's removed it can't be undone.
+    34. Why should I use version control?
+        It's important when collaborating, storing versions properly, restoring version, understanding what changes were made, and back-ups
+    35. How often should I commit to github?
+        Whenever making changes to a project you should commit. During the process commit changes frequently.
+    36. What is the command we would use to push our repo up to github?
+        git push
+    37. Walk me through Lambda's git flow. 
+        Create YOUR OWN version of Repo —> (Fork)
+        Clone your Repo using GitHubs 'Clone or download' button
+        Back inside your CLI, use the cd command to go to the directory where you are going to want to clone your forked Repo
+        Use the git clone command to clone the repo to the directory you are currently in
+        cd into the newly created repo using the cd command
+        Use the git checkout -b 'firstname-lastname' command to create your own branch name for the repo (this is the branch that you will be doing your work on)
+        To add and commit changes on your branch you can do the following
+        git add . will add the repo changes and make them ready for committing
+        git commit -m "Your helpful commit message here" will commit the changes with your specified commit message (commit message should explain what changes you've added to         the repo that you are committing)
+        Push your changes back up to your Github repo
+        Now that the changes are on github you can submit a PR (Pull Request)
+        Go back to your forked Project repo on github (make sure you are on YOUR FORKED copy NOT the original Lambda one)
+        Click on the Branch:master button on the left side
+        This will create a dropdown where you should be able to select your name-branch now
+        Click your name-branch and then click the New pull request button to make a pull request on your name branch
+        After you click new pull request it should redirect you to the pull request page
+
+        IT IS IMPORTANT THAT YOU DO NOT CLICK THE Create pull request BUTTON UNTIL AFTER YOU'VE COMPLETED THE NEXT STEP
+
+        When you get to the PR page, make sure to click the dropdown button that says base repository and CHANGE it to be your FORKED REPO instead of the original Lambda repo         (when submitting PR it will default to the original Repo this is why it needs to be changed)
+        Submit the pull request link to Canvas
